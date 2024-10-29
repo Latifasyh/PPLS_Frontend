@@ -1,0 +1,96 @@
+/* RightSidebar.css */
+
+/* Barre latérale par défaut (étroite) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70px; /* Taille réduite par défaut */
+    background-color: white;
+    padding: 16px;
+    border-radius: 0 25px 25px 0;
+    transition: width 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sidebar:hover {
+    width: 250px; /* Taille élargie au survol */
+}
+
+/* Titre "À découvrir" */
+.sidebar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.sidebar-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #38a169;
+    display: none; /* Cacher par défaut */
+}
+
+/* Afficher le titre au survol */
+.sidebar:hover .sidebar-title {
+    display: block;
+}
+
+/* Les éléments de la barre latérale */
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.sidebar-item:hover {
+    background-color: #f0f9f7;
+}
+
+/* Les étiquettes (texte) sont cachées par défaut */
+.sidebar-label {
+    opacity: 0;
+    margin-left: 20px; /* Augmenter l'espace entre l'icône et le texte */
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+    color: #38a169;
+}
+
+/* Afficher les étiquettes quand la barre latérale est élargie */
+.sidebar:hover .sidebar-label {
+    opacity: 1;
+}
+
+/* Icônes (elles restent visibles même lorsque la barre est réduite) */
+.icon-container {
+    width: 40px;
+    height: 40px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #38a169;
+    flex-shrink: 0; /* Empêcher l'icône de rétrécir */
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+/* Ajuster l'espace des icônes quand la barre latérale est élargie */
+.sidebar:hover .icon-container {
+    margin-right: 20px;
+}
