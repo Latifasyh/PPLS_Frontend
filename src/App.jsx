@@ -23,9 +23,14 @@ import LeftSidebar from './LeftSidebar';
 import UserProfile from './UserProfile';
 import SidebarRr from './SidebarRr';
 import MyInformation from './MyInformation';
-import Pets from './pets';
+import Pets from './Pets';
 import Discussion from './Discussion';
 import Profil from './Profil';
+import Business from './Business';
+
+
+
+
 
 const App = () => {
   const { user } = useContext(AppContext);
@@ -51,6 +56,7 @@ const App = () => {
  
         <Route path="/profile-completion" element={<ProfileCompletionPage />} />
         
+        <Route path="/business" element={<ProtectedRoute element={<Business />} />} />
         <Route path="/marketplace" element={<ProtectedRoute element={<Marketplace />} />} />
         <Route path="/messages" element={<ProtectedRoute element={<MessagingPage />} />} />
         <Route path="/events" element={<ProtectedRoute element={<EventsPage />} />} />

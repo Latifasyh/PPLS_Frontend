@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+;import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faFileEdit, faPlus, faRotateBack } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -273,7 +273,7 @@ const Pets = () => {
           </div>
           <button 
             type="submit" 
-            className="bg-blue-500 text-white p-2 rounded mt-4"
+            className="bg-green-900 text-white p-2 rounded mt-4"
           >
             Ajouter Animal
           </button>
