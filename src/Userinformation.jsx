@@ -293,7 +293,7 @@ const handleUpdate = async (e) => {
                         className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 transition duration-150 ease-in-out"
                     />
                 </div>
-                <div className="relative">
+                <div className="relative  ">
                     <label htmlFor="phone" className="text-sm font-medium text-gray-700">Numéro de téléphone</label>
                     <div className="flex">
                         <input
@@ -302,7 +302,8 @@ const handleUpdate = async (e) => {
                             type="text"
                             value={userData.phonecode || ''}
                             onChange={handleChange}
-                            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 transition duration-150 ease-in-out"
+                            className="mt-1 block w-3/12 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 transition duration-150 ease-in-out"
+                            placeholder="Phone"
                         />
                         <input
                     
@@ -311,7 +312,7 @@ const handleUpdate = async (e) => {
                             type="text"
                             value={userData.number_phone || ''}
                             onChange={handleChange}
-                            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 transition duration-150 ease-in-out"
+                            className="mt-1 block w-10/12 px-4 py-2 ml-1 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 transition duration-150 ease-in-out"
                             placeholder="Phone Number"
                             
                         />

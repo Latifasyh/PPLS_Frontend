@@ -41,7 +41,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-green-onion text-white p-2 shadow-md fixed top-0 left-0 right-0 z-50">
+    <header className="bg-green-onion text-white p-2 shadow-md fixed top-0 left-0  right-0 z-50">
       <div className="container mx-auto flex items-center">
         <h1 className="text-3xl font-bold mr-6" style={{ fontFamily: 'Arial, sans-serif', letterSpacing: '0.5px' }}>
         <button onClick={() => navigate('/home')}>
