@@ -23,6 +23,8 @@ const UserProfile = () => {
     cover: '', // Grande couverture
     picture: '', // Avatar
   });
+
+  
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -303,7 +305,7 @@ const UserProfile = () => {
               </div>
             ) : (
               <div className="mt-2">
-                <p className="text-gray-700">{userData.bio}</p>
+                <p className="text-gray-700">{userData.bio ||'No bio available'}</p>
                 <button onClick={() => { setIsEditingBio(true); setBio(userData.bio); }} 
                       className="text-green-950"
                        title="Ajouter votre Bio"

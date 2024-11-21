@@ -27,7 +27,8 @@ import Pets from './Pets';
 import Discussion from './Discussion';
 import Profil from './Profil';
 import Business from './Business';
-
+import Veterinary from './Veterinary';
+import Shelter_services from './Shelter_services';
 
 
 
@@ -56,6 +57,10 @@ const App = () => {
  
         <Route path="/profile-completion" element={<ProfileCompletionPage />} />
         
+        <Route path="/veterinary" element={<ProtectedRoute element={<Veterinary />} />} />
+
+        <Route path="/Shelter_services" element={<ProtectedRoute element={<Shelter_services />} />} />
+
         <Route path="/business" element={<ProtectedRoute element={<Business />} />} />
         <Route path="/marketplace" element={<ProtectedRoute element={<Marketplace />} />} />
         <Route path="/messages" element={<ProtectedRoute element={<MessagingPage />} />} />

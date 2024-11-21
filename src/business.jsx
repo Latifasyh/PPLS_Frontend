@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState, useRef, useCallback} from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { AppContext } from './Context/AppContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,6 +7,9 @@ import { faPlus, faChevronLeft, faChevronRight, faEdit, faSave, faRotateBackward
 import { faDeleteLeft } from '@fortawesome/free-solid-svg-icons/faDeleteLeft';
 
 const Business = () => {
+
+  const navigate = useNavigate();
+
   const { token } = useContext(AppContext);
   const [showUploadButton, setShowUploadButton] = useState(false); // Contrôle l'affichage du bouton "Publier"
   const fileInputRef = useRef(null); // Créer une référence pour l'input de fichier
@@ -25,6 +29,9 @@ const Business = () => {
     ville: '',  
     pictures: [],
   });
+
+
+  
 
   // État pour le modal
   const [isModalOpen, setIsModalOpen] = useState(false);

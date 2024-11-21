@@ -5,7 +5,7 @@ import RightSidebar from './RightSidebar'
 import Discussion from './Discussion';
 import { AppContext } from './Context/AppContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsUp, faSmile, faFrown, faLaugh, faSurprise, faAngry, faEdit, faTrashCan, faUpload, faCancel, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faThumbsUp, faSmile, faFrown, faLaugh, faSurprise, faAngry, faEdit, faTrashCan, faUpload, faCancel, faClose, faThumbsDown, faSadCry } from '@fortawesome/free-solid-svg-icons';
 
 const HomePage = () => {
   const { token } = useContext(AppContext);
@@ -228,8 +228,10 @@ const HomePage = () => {
     like: faThumbsUp,
     love: faSmile,
     laugh: faLaugh,
-    surprise: faSurprise,
+    //surprise: faSurprise,
     angry: faAngry,
+    dislike: faThumbsDown,
+    sad : faSadCry,
   };
 
   return (

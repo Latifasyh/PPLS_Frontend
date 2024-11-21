@@ -23,10 +23,10 @@ const RightSidebar = () => {
             <h3 className={`text-xl font-bold mb-4 text-green-onion-dark ${!isExpanded && 'hidden'}`}>À découvrir</h3>
             <ul className="space-y-4">
                 {[
-                    { path: "/groups", icon: faUserDoctor, label: "Vétérinaires" },
+                    { path: "/veterinary", icon: faUserDoctor, label: "Vétérinaires" },
                     { path: "/events", icon: faBell, label: "Événements" },
                     { path: "/marketplace", icon: faStore, label: "Store" },
-                    { path: "/services", icon: faPaw, label: "Toilettage et autres services" },
+                    { path: "/Shelter_services", icon: faPaw, label: "Toilettage et autres services" },
                     { path: "/tips", icon: faLightbulb, label: "Astuces" },
                     { path: "/emergencies", icon: faPhone, label: "Urgences" },
                 ].map((item, index) => (
